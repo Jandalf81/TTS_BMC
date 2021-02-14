@@ -551,7 +551,7 @@ function getPlayOrder()
 								{
 									tag = 'Image',
 									attributes = {
-										image = 'loot_spellbooks',
+										image = 'loot_gold',
 										preserveAspect = true
 									}
 								}
@@ -564,7 +564,7 @@ function getPlayOrder()
 								{
 									tag = 'Image',
 									attributes = {
-										image = 'loot_gold',
+										image = 'loot_spellbooks',
 										preserveAspect = true
 									}
 								}
@@ -618,11 +618,11 @@ function getPlayOrder()
 						{tag = 'Cell', attributes = {id = 'relicsCell_' .. color, color = 'rgba(0, 0, 0, 0.7)', dontUseTableCellBackground = true}, children = 
 							{tag = 'Text', value = 0, attributes = {id = 'relics_' .. color, color = 'White'}}
 						},
-						{tag = 'Cell', attributes = {id = 'spellbooksCell_' .. color, color = 'rgba(0, 0, 0, 0.7)', dontUseTableCellBackground = true}, children = 
-							{tag = 'Text', value = 0, attributes = {id = 'spellbooks_' .. color, color = 'White'}}
-						},
 						{tag = 'Cell', attributes = {id = 'goldCell_' .. color, color = 'rgba(0, 0, 0, 0.7)', dontUseTableCellBackground = true}, children = 
 							{tag = 'Text', value = 0, attributes = {id = 'gold_' .. color, color = 'White'}}
+						},
+						{tag = 'Cell', attributes = {id = 'spellbooksCell_' .. color, color = 'rgba(0, 0, 0, 0.7)', dontUseTableCellBackground = true}, children = 
+							{tag = 'Text', value = 0, attributes = {id = 'spellbooks_' .. color, color = 'White'}}
 						},
 						{tag = 'Cell', attributes = {id = 'artifactsCell_' .. color, color = 'rgba(0, 0, 0, 0.7)', dontUseTableCellBackground = true}, children = 
 							{tag = 'Text', value = 0, attributes = {id = 'artifacts_' .. color, color = 'White'}}
