@@ -1,4 +1,29 @@
+function setGUIDs()
+	-- generic decks
+	deck_Bosses = '4533c7'
+	deck_Rooms = '42c776'
+	deck_Rooms_Minibosses = 'c57911'
+	deck_Spells = '710a77'
+
+	--decks for 2 players
+	deck_Heroes_xP = '597676'
+	deck_EpicHeroes_xP = 'd5b1ce'
+	deck_Heroes_2P = '4d96a4'
+	deck_EpicHeroes_2P = '17c64a'
+
+	-- decks for 3 players
+	deck_Heroes_3P = '68b930'
+	deck_EpicHeroes_3P = '63166d'
+
+	-- decks for 4 players
+	deck_Heroes_4P = 'b0cf92'
+	deck_EpicHeroes_4P = 'aecae7'
+end
+
+
 function onLoad(save_state)
+	setGUIDs()
+
 	btn_2P = {
 		click_function = 'MB_2P',
 		function_owner = self,
@@ -50,7 +75,7 @@ end
 function putCardsFor2P()
 	-- put Boss deck on table
 	toNewPos = {
-		guid = '4533c7',
+		guid = deck_Bosses,
 		position = zone_BossStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -58,7 +83,7 @@ function putCardsFor2P()
 
 	-- put Room deck on table
 	toNewPos = {
-		guid = '42c776',
+		guid = deck_Rooms,
 		position = zone_RoomStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -66,7 +91,7 @@ function putCardsFor2P()
 
 	-- put Minibosses deck on table
 	toNewPos = {
-		guid = 'c57911',
+		guid = deck_Rooms_Minibosses,
 		position = zone_RoomStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -74,7 +99,7 @@ function putCardsFor2P()
 
 	-- put Spell deck on table
 	toNewPos = {
-		guid = '710a77',
+		guid = deck_Spells,
 		position = zone_SpellStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -82,7 +107,7 @@ function putCardsFor2P()
 
 	-- put Hero deck *P on table
 	toNewPos = {
-		guid = '597676',
+		guid = deck_Heroes_xP,
 		position = zone_HeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -90,7 +115,7 @@ function putCardsFor2P()
 
 	-- put Epic Hero deck *P on table
 	toNewPos = {
-		guid = 'd5b1ce',
+		guid = deck_EpicHeroes_xP,
 		position = zone_EpicHeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -98,7 +123,7 @@ function putCardsFor2P()
 
 	-- put Hero deck 2P on table
 	toNewPos = {
-		guid = '4d96a4',
+		guid = 	deck_Heroes_2P,
 		position = zone_HeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -106,7 +131,7 @@ function putCardsFor2P()
 
 	-- put Epic Hero deck 2P on table
 	toNewPos = {
-		guid = '17c64a',
+		guid = deck_EpicHeroes_2P,
 		position = zone_EpicHeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -116,7 +141,7 @@ end
 function putCardsFor3P()
 	-- put Hero deck 3P on table
 	toNewPos = {
-		guid = '68b930',
+		guid = deck_Heroes_3P,
 		position = zone_HeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -124,7 +149,7 @@ function putCardsFor3P()
 
 	-- put Epic Hero deck 3P on table
 	toNewPos = {
-		guid = '63166d',
+		guid = deck_EpicHeroes_3P,
 		position = zone_EpicHeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -134,7 +159,7 @@ end
 function putCardsFor4P()
 	-- put Hero deck 4P on table
 	toNewPos = {
-		guid = 'b0cf92',
+		guid = deck_Heroes_4P,
 		position = zone_HeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
@@ -142,7 +167,7 @@ function putCardsFor4P()
 
 	-- put Epic Hero deck 4P on table
 	toNewPos = {
-		guid = 'aecae7',
+		guid = deck_EpicHeroes_4P,
 		position = zone_EpicHeroStack.getPosition(),
 		rotation = {0.0, 180.0, 180.0}
 	}
